@@ -1,0 +1,262 @@
+
+.footer
+  position: relative
+  background-color: $black
+  &::before
+    content: ''
+    position: absolute
+    top: 80px
+    left: 0
+    width: 100%
+    height: 0.5px
+    background-color: $bg
+  &::after
+    content: ''
+    position: absolute
+    bottom: 90px
+    left: 0
+    width: 100%
+    height: 0.5px
+    background-color: $bg
+  &-menu-title
+    display: none
+  &-menu-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 18px 0
+  &-menu-nav
+    ul
+      list-style: none
+      display: flex
+      justify-content: space-between
+      align-items: center
+      gap: 22px
+      padding-left: 0
+      margin-bottom: 0
+    a
+      text-decoration: none
+      color: $bg
+      &:hover
+        color: $accent_green
+
+  &-body-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 56px 0
+  &-contact-text
+    display: none
+  &-social-mobil
+    display: none
+  &-social
+    display: flex
+    align-items: center
+    gap: 16px
+    a
+      text-decoration: none
+  &-icon
+    width: 44px
+    height: 44px
+    fill: $white
+    &:hover
+      fill: #C2F25D
+
+  &-info
+    width: 880px
+    display: flex
+    justify-content: space-between
+  &-adress
+    position: relative
+    max-width: 180px
+    color: $bg
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: -40px
+      width: 25px
+      height: 25px
+      background: url(../img/location.svg) no-repeat
+  &-cif
+    position: relative
+    width: 112px
+    color: $bg
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: -40px
+      width: 25px
+      height: 25px
+      background: url(../img/ribbon.svg) no-repeat
+  &-contact
+    width: 306px
+    color: $bg
+  &-mail
+    position: relative
+    margin-bottom: 0
+    color: $white
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: -40px
+      width: 25px
+      height: 25px
+      background: url(../img/mail.svg) no-repeat
+  &-phone
+    position: relative
+    margin-top: 16px
+    margin-bottom: 0
+    color: $white
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: -40px
+      width: 25px
+      height: 25px
+      background: url(../img/call.svg) no-repeat
+  &-text-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    gap: 20px
+  &-copy
+    color: $bg
+    margin: 32px 0
+  &-website
+    color: $bg
+    margin: 32px 0
+    a
+      text-decoration: none
+      color: $accent_lightgreen
+  &-policy
+    margin: 32px 0
+    a
+      text-decoration: none
+      color: $bg
+
+  &-policies
+    border-top: 1px solid $accent_lightgreen
+    &::before
+      background-color: $accent_lightgreen
+    &::after
+      background-color: $accent_lightgreen
+
+.back-to-top
+  display: none
+  position: fixed
+  bottom: 92px
+  right: 20px
+  width: 80px
+  height: 80px
+  background: url(../img/pageup.svg) no-repeat
+  cursor: pointer
+  z-index: 10
+  &:hover
+    background: url(../img/pageup.svg) no-repeat rgba(255, 255, 255, 0.10)
+    border-radius: 50%
+
+//
+
+@media screen and (max-width: 1230px)
+  .footer
+    &-info
+      width: 675px
+
+@media screen and (max-width: 1000px)
+  .footer
+    &-body-wrap
+      flex-direction: column
+    &-info
+      width: 90%
+      margin-top: 50px
+
+@media screen and (max-width: 900px)
+  .footer
+    &::before
+      display: none
+    &::after
+      display: none
+    &-menu-wrap
+      flex-direction: column
+    &-social
+      margin-top: 30px
+
+@media screen and (max-width: 800px)
+  .footer
+    padding-bottom: 24px
+    &-body-wrap
+      align-items: start
+
+    &-info
+      flex-direction: column
+      padding-left: 50px
+
+    &-website, &-phone, &-copy, &-policy
+      margin: 0
+      font-size: 12px
+      line-height: 12px
+
+@media screen and (max-width: 630px)
+  .footer
+
+    &-body-wrap
+      padding-top: 0
+    &-menu-title
+      display: block
+      margin-bottom: 10px
+      color: $accent_lightgreen
+      font-family: "Open Sans"
+      font-size: 20px
+      font-style: normal
+      font-weight: 600
+      line-height: 24px /* 120% */
+    &-menu-wrap
+      align-items: start
+
+    &-menu-nav
+      ul
+        flex-direction: column
+        align-items: start
+        gap: 6px
+    &-logo
+      display: none
+    &-info
+      margin-top: 0
+    &-text-wrap
+      flex-wrap: wrap
+      justify-content: center
+      margin-top: 20px
+    &-contact-text
+      display: block
+      color: $accent_lightgreen
+      font-family: "Open Sans"
+      font-size: 20px
+      font-style: normal
+      font-weight: 600
+      line-height: 24px /* 120% */
+    &-social
+      display: none
+    &-social-mobil
+      display: flex
+      justify-content: space-between
+      max-width: 450px
+      margin: 0 auto
+
+@media screen and (max-width: 460px)
+  .footer
+    &-adress, &-cif, &-mail, &-phone
+      font-size: 16px
+      line-height: 24px
+    &-copy
+      order: -1
+    &-policy
+      order: -1
+
+  .back-to-top
+    transform: scale(70%)
+    bottom: 145px
+    right: 2px

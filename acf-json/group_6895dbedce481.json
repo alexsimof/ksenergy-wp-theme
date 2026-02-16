@@ -1,0 +1,260 @@
+{
+    "key": "group_6895dbedce481",
+    "title": "main",
+    "fields": [
+        {
+            "key": "field_6895dbee421c4",
+            "label": "main-group",
+            "name": "main-group",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6895dc34421c5",
+                    "label": "main-bg",
+                    "name": "main-bg",
+                    "aria-label": "",
+                    "type": "file",
+                    "instructions": "Видео на заднем фоне. Если не вставлять видео, будет картинка по умолчанию.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "translations": "ignore",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_6895dc46421c6",
+                    "label": "main-title",
+                    "name": "main-title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "translations": "ignore",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_6895dc55421c7",
+                    "label": "main-subtitle",
+                    "name": "main-subtitle",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "translations": "ignore",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_6895dc6f421c8",
+                    "label": "main-btn-link",
+                    "name": "main-btn-link",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Ссылка для кнопки",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "translations": "ignore",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_6895dc8e421c9",
+                    "label": "main-btn-text",
+                    "name": "main-btn-text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Название кнопки",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "translations": "ignore",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_689dc3391d92b",
+                    "label": "icon-link-facebook",
+                    "name": "icon-link-facebook",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Вставляем ссылку на соцсеть",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "http:\/\/",
+                    "translations": "ignore",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_68a466c69a055",
+                    "label": "icon-link-iks",
+                    "name": "icon-link-iks",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Вставляем ссылку на соцсеть",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "http:\/\/",
+                    "translations": "ignore",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_68a479631cc9c",
+                    "label": "icon-link-whatsapp",
+                    "name": "icon-link-whatsapp",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Вставляем ссылку на соцсеть",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "http:\/\/",
+                    "translations": "ignore",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_68a466de9a056",
+                    "label": "icon-link-telega",
+                    "name": "icon-link-telega",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Вставляем ссылку на соцсеть",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "http:\/\/",
+                    "translations": "ignore",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_68a467149a057",
+                    "label": "icon-link-insta",
+                    "name": "icon-link-insta",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Вставляем ссылку на соцсеть",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "http:\/\/",
+                    "translations": "ignore",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_68a4672a9a058",
+                    "label": "icon-link-linked",
+                    "name": "icon-link-linked",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Вставляем ссылку на соцсеть",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "http:\/\/",
+                    "translations": "ignore",
+                    "placeholder": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "2"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "17"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1771265979
+}

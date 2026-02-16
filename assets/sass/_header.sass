@@ -1,0 +1,173 @@
+
+.body-wrapper
+  overflow: hidden
+  position: relative
+  width: 100%
+  max-width: 1920px
+  margin: auto
+
+.header
+  position: relative
+  background: rgba(62, 62, 63, 0.20)
+  padding: 20px 0 8px
+  backdrop-filter: blur(4px)
+  z-index: 2
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-logo
+    a
+      text-decoration: none
+    img
+      display: block
+  &-menu
+    flex-basis: 52%
+    ul
+      padding-left: 0
+      margin-bottom: 0
+      list-style: none
+      display: flex
+      align-items: center
+      justify-content: space-between
+    li
+      padding-bottom: 10px
+      &:hover
+        border-bottom: 1.5px solid $accent_lightgreen
+
+  &-mobil-menu
+    display: none
+
+  &-link
+    text-decoration: none
+    color: $black
+    font-family: "Open Sans"
+    font-size: 18px
+    font-style: normal
+    font-weight: 400
+    line-height: 24px /* 133.333% */
+
+  &-lang
+    a, span
+      text-decoration: none
+      color: $black
+      leading-trim: both
+      text-edge: cap
+      font-family: "Open Sans"
+      font-size: 16px
+      font-style: normal
+      font-weight: 400
+      line-height: 24px
+  &-menu-toggle
+    display: none
+    padding: 15px 0
+
+  &-lang-wrap
+    list-style: none
+    display: flex
+    margin-bottom: 0
+    padding-left: 0
+    li
+      position: relative
+      &:not(:last-child)
+        margin-right: 20px
+        &::after
+          content: '|'
+          position: absolute
+          right: -12px
+          top: -5px
+          font-size: 20px
+    a
+      text-transform: uppercase
+
+    .current-lang
+      a
+        color: $accent_lightgreen
+
+@media screen and (max-width: 1290px)
+  .header
+    &-menu
+      flex-basis: 68%
+
+@media screen and (max-width: 1050px)
+  .header
+    &-menu
+      display: none
+    &-menu-toggle
+      display: block
+      span
+        position: relative
+        display: block
+        width: 32px
+        height: 2px
+        background-color: $white
+        margin: 0
+        &::after
+          content: ''
+          position: absolute
+          left: 0
+          top: -10px
+          width: 32px
+          height: 2px
+          background-color: $white
+        &::before
+          content: ''
+          position: absolute
+          left: 0
+          top: 10px
+          width: 32px
+          height: 2px
+          background-color: $white
+    &-lang
+      margin-left: auto
+      margin-right: 30px
+    &-menu-icon
+      width: 44px
+      height: 44px
+      fill: $white
+
+  .header
+    &-mobil-menu
+      transform: translateX(430px)
+      display: block
+      position: absolute
+      height: 100vh
+      right: 0px
+      top: 0
+      border-radius: 20px 0 0 0
+      background: $black
+      box-shadow: 0 -4px 20px 0 rgba(255, 255, 255, 0.10) inset
+      backdrop-filter: blur(7.5px)
+      padding: 32px 24px 8px 12px
+      z-index: 5
+      ul
+        list-style: none
+        padding-left: 0
+        margin-bottom: 0
+        li
+          &:not(:last-child)
+            margin-bottom: 32px
+        a
+          color: $white
+    &-mobil-logo
+      text-align: center
+    &-mobil-nav
+      margin: 40px 0
+    &-mobil-social
+      display: flex
+      gap: 12px
+      a
+        text-decoration: none
+
+    &-mobil-close
+      display: block
+      position: absolute
+      top: 0
+      left: -50px
+      width: 40px
+      height: 40px
+      background: url(../img/close.svg) no-repeat
+
+  .show
+    transform: translateX(0)
+    transition: 0.3s
