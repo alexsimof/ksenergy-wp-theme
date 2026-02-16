@@ -108,7 +108,7 @@ Benefits:
 
 ## Author
 
-Alexandr Simonov.
+Alexandr Simonov.<br>
 Full Stack WordPress & JavaScript Developer.
 Focused on scalable and maintainable web architecture.
 
